@@ -1,7 +1,7 @@
 import { apiSlice } from "./api/apiSlice";
 import { Action, configureStore, ThunkAction } from "@reduxjs/toolkit";
 
-import { Middleware } from "redux";
+// import { Middleware } from "redux";
 // const middleware: Middleware[] = [apiSlice.middleware];
 export const store = configureStore({
     reducer: {

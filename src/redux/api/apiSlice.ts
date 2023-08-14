@@ -5,7 +5,7 @@ export const apiSlice = createApi({
 		baseUrl: 'https://server.koreanmallbd.org/v1/',
 	}),
 	tagTypes: ['AddCartData'],
-	endpoints: (build) => ({
+	endpoints: () => ({
 
 	}),
 });
