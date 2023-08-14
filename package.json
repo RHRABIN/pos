@@ -3,16 +3,16 @@
   "version": "0.0.0",
   "private": true,
   "description": "Hello Bengal",
-  "author":"Bengal Soft",
+  "author": "Bengal Soft",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build && electron-builder",
-   
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "start": "electron-forge start",
-    "package": "electron-forge package",
-    "make": "electron-forge make"
+    "forge-package": "electron-forge package",
+    "make": "electron-forge make",
+    "package": "electron-builder"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
@@ -36,6 +36,7 @@
     "@vitejs/plugin-react": "^4.0.0",
     "autoprefixer": "^10.4.14",
     "electron": "^24.4.0",
+    "electron-builder": "^24.6.3",
     "eslint": "^8.38.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.4",
@@ -46,5 +47,9 @@
     "vite-plugin-electron": "^0.11.2",
     "vite-plugin-electron-renderer": "^0.14.5"
   },
-  "main": "dist-electron/main.js"
+  "main": "dist-electron/main.js",
+  "build": {
+    "appId": "post.inventory.bengal",
+    "productName": "POS inventory"
+  }
 }
